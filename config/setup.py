@@ -16,8 +16,9 @@ def run_dependencies_by_pipelinesh():
     subprocess.run(["/bin/bash", "./build_pipeline/RUN_pipeline.sh"])
 
 # Pre-installation routine
-run_dependencies_by_pipelinesh()
-relative_path_HMMs = find_relative_path_HMMs()
+#run_dependencies_by_pipelinesh()
+relative_path_HMMs = []#= find_relative_path_HMMs()
+print(f'os.getcwd() ================ {os.getcwd()}')
 
 setup(name='anarci',
       version='1.3',
