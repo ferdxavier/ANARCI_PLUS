@@ -1,0 +1,4 @@
+python-3.11.0
+setuptools-58.2.0
+biopython-1.79
+hmmer-3.1b2 (To pip = hmmer-0.2.4)
