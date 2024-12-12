@@ -11,6 +11,8 @@ source /workdir/_venv/bin/activate &&
 #pip install biopython==$BIOPYTHON_VERSION &&
 #pip install hmmer==$HMMER_VENV_VERSION
 
+git config --global --add safe.directory /workdir/ANARCI/.git &&
+
 . /usr/spack/share/spack/setup-env.sh && 
 spack env create ab && 
 spack env activate ab &&
