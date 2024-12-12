@@ -31,5 +31,5 @@ RUN python$VENV_VERSION -m venv /workdir/_venv
 
 WORKDIR /workdir
 
-COPY ./4_script_cont_create_venv.sh /workdir/
-COPY ./5_script_copy_package.sh /workdir/
+COPY /config/package.py /workdir/
+COPY ./4_script_install_py_anarci.sh /workdir/
