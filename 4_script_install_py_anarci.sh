@@ -5,11 +5,11 @@ HMMER_VENV_VERSION=0.2.4
 
 python$PYTHON_ENV_VERSION -m venv /workdir/_venv &&
 source /workdir/_venv/bin/activate &&
-cd /workdir/ANARCI &&
-pip uninstall setuptools &&
-pip install setuptools==$SETUPTOOLS_VERSION &&
-pip install biopython==$BIOPYTHON_VERSION &&
-pip install hmmer==$HMMER_VENV_VERSION
+#cd /workdir/ANARCI &&
+#pip uninstall setuptools &&
+#pip install setuptools==$SETUPTOOLS_VERSION &&
+#pip install biopython==$BIOPYTHON_VERSION &&
+#pip install hmmer==$HMMER_VENV_VERSION
 
 . /usr/spack/share/spack/setup-env.sh && 
 spack env create ab && 
